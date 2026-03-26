@@ -1,3 +1,15 @@
-# prueba1
+## Setup
 
-este es un proyecto de prueba de python con git
+pip install -r requirements.txt
+
+## Run
+
+uvicorn app.main:app --reload
+
+## Test
+
+pytest
+
+## Example
+
+GET http://localhost:8000/urlinfo/1/bad.com/malware
