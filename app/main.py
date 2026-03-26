@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from service import URLService
+from app.service import URLService
 
 app = FastAPI()
 service = URLService()
