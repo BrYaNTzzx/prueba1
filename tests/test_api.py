@@ -3,6 +3,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 client = TestClient(app)
 
+
 def test_safe_url():
     response = client.get("/urlinfo/1/google.com/search")
     assert response.status_code == 200
